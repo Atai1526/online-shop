@@ -11,7 +11,7 @@ const Header = () => {
     <header className="flex justify-between items-center bg-black px-6 py-6">
       <div className="flex items-center sm:max-w-xl sm:w-full sm:object-cover sm:object-center">
           <Link to="/" className="text-white xl:text-4xl sm:text-2xl ">
-              Hollyshop
+              MVP
           </Link>
           <div className="ml-8 sm:max-w-l">
               <button type="button" className="bg-white py-3 px-6 rounded mr-3" onClick={()=>dispatch(setBase("USD"))}>USD</button>
