@@ -9,24 +9,24 @@ const Header = () => {
     const dispatch=useDispatch()
   return (
     <header className="flex justify-between items-center bg-black px-6 py-6">
-      <div className="flex items-center">
-          <Link to="/" className="text-white text-4xl">
+      <div className="flex items-center sm:max-w-xl sm:w-full sm:object-cover sm:object-center">
+          <Link to="/" className="text-white xl:text-4xl sm:text-2xl ">
               Hollyshop
           </Link>
-          <div className="ml-8">
+          <div className="ml-8 sm:max-w-l">
               <button type="button" className="bg-white py-3 px-6 rounded mr-3" onClick={()=>dispatch(setBase("USD"))}>USD</button>
               <button type="button" className="bg-white py-3 px-6 rounded mr-3" onClick={()=>dispatch(setBase("EUR"))}>EUR</button>
               <button type="button" className="bg-white py-3 px-6 rounded mr-3" onClick={()=>dispatch(setBase("CAD"))}>CAD</button>
           </div>
       </div>
-      <nav className="top menu">
-        <Link to="/" className="text-white mr-3">
+      <nav className="top menu sm:max-w-">
+        <Link to="/" className="text-white mr-1">
           Home
         </Link>
-        <Link to="/basket" className="text-white mr-3">
+        <Link to="/basket" className="text-white mr-1">
           Cart({totalCount})
         </Link>
-        <Link to="/logs" className="text-white mr-3">
+        <Link to="/logs" className="text-white mr-1">
           Logs
         </Link>
       </nav>

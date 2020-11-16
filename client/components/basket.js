@@ -11,10 +11,10 @@ const Basket = () => {
   return (
     <div>
       <div className="bg-green-200 py-3 flex mb-3">
-        <div className="w-1/4">Название </div>
-          <div className="w-1/4">Изображение</div>
+        <div className="w-1/4">Наз </div>
+          <div className="w-1/4">Избр</div>
         <div className="w-1/4">Кол-во</div>
-        <div className="w-1/4">Обшая стоимость</div>
+        <div className="w-1/4">Обшая ст</div>
       </div>
       {cart.map((item) => (
         <div key={item.id} className="bg-green-300 py-3 flex mb-3">
